@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: aztechnightsapicontagem 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: aztechnightsapicontagem 
+    spec:
+      containers:
+        - name: aztechnightsapicontagem 
+          image: azuretechnights.azurecr.io/aztechnightsapicontagem
+          ports:
+          - containerPort: 80
