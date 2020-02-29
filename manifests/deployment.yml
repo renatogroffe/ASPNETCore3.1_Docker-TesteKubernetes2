@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: apicontagem 
 spec:
-  replicas: 1
+  replicas: 50
   template:
     metadata:
       labels:
